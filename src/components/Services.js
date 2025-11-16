@@ -57,39 +57,37 @@ const ServiceDescription = styled.p`
 `;
 export default function Services() {
   return (
+    <div>
+      <h2 style={{ marginBottom: 20 }}>Services</h2>
 
-    
-    <ServicesContainer>
-
-   
-      <Grid>
-        <Card>
-          <Icon>🛌</Icon>
-          <ServiceTitle>Accommodation</ServiceTitle>
-          <ServiceDescription>
-            Luxury sea-view rooms and private villas, designed for ultimate
-            relaxation and comfort.
-          </ServiceDescription>
-        </Card>
-        <Card>
-          <Icon>🛶</Icon>
-          <ServiceTitle>Adventure</ServiceTitle>
-          <ServiceDescription>
-            Guided tours, kayaking, challenging coastal trekking, and thrilling
-            water sports activities.
-          </ServiceDescription>
-        </Card>
-        <Card>
-          <Icon>🧘‍♀️</Icon>
-          <ServiceTitle>Wellness & Spa</ServiceTitle>
-          <ServiceDescription>
-            Rejuvenating massages, dedicated yoga sessions, and holistic
-            treatments tailored to your needs.
-          </ServiceDescription>
-        </Card>
-      </Grid>
-    </ServicesContainer>
+      <ServicesContainer>
+        <Grid>
+          <Card>
+            <Icon>🛌</Icon>
+            <ServiceTitle>Accommodation</ServiceTitle>
+            <ServiceDescription>
+              Luxury sea-view rooms and private villas, designed for ultimate
+              relaxation and comfort.
+            </ServiceDescription>
+          </Card>
+          <Card>
+            <Icon>🛶</Icon>
+            <ServiceTitle>Adventure</ServiceTitle>
+            <ServiceDescription>
+              Guided tours, kayaking, challenging coastal trekking, and
+              thrilling water sports activities.
+            </ServiceDescription>
+          </Card>
+          <Card>
+            <Icon>🧘‍♀️</Icon>
+            <ServiceTitle>Wellness & Spa</ServiceTitle>
+            <ServiceDescription>
+              Rejuvenating massages, dedicated yoga sessions, and holistic
+              treatments tailored to your needs.
+            </ServiceDescription>
+          </Card>
+        </Grid>
+      </ServicesContainer>
+    </div>
   );
 }
-
-
