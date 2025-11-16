@@ -59,6 +59,8 @@ const ServiceDescription = styled.p`
 export default function Services() {
   return (
     <ServicesContainer>
+
+    <h2>Services</h2>
       <Grid>
         <Card>
           <Icon>🛌</Icon>
@@ -88,3 +90,4 @@ export default function Services() {
     </ServicesContainer>
   );
 }
+
