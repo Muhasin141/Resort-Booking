@@ -1,0 +1,107 @@
+/* Header.css */
+
+/* Corresponds to:
+  className="relative h-screen bg-cover bg-center"
+  style={{ backgroundImage: "url(...)" }}
+*/
+.header {
+  position: relative;
+  height: 100vh; /* h-screen */
+  background-size: cover; /* bg-cover */
+  background-position: center; /* bg-center */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/032/242/170/large_2x/beautiful-waterfall-flowers-water-nature-waterfall-hd-wallpaper-ai-generated-free-photo.jpg");
+}
+
+/* Corresponds to:
+  className="absolute inset-0 bg-black opacity-40"
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* inset-0 */
+  background-color: #000; /* bg-black */
+  opacity: 0.4; /* opacity-40 */
+}
+
+/* Corresponds to:
+  className="relative flex flex-col items-center justify-center h-full text-white text-center p-4"
+*/
+.header-content {
+  position: relative;
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  height: 100%; /* h-full */
+  color: #fff; /* text-white */
+  text-align: center; /* text-center */
+  padding: 1rem; /* p-4 (1rem = 16px) */
+}
+
+/* Corresponds to:
+  className="text-6xl md:text-8xl font-serif font-extrabold mb-4 animate-fadeIn"
+*/
+.header-title {
+  font-size: 3.75rem; /* text-6xl (60px) */
+  font-family: serif; /* font-serif */
+  font-weight: 800; /* font-extrabold */
+  margin-bottom: 1rem; /* mb-4 */
+  animation: fadeIn 2s ease-out; /* animate-fadeIn */
+}
+
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 6rem; /* md:text-8xl (96px) */
+  }
+}
+
+/* Corresponds to:
+  className="text-2xl md:text-3xl font-light mb-12 italic"
+*/
+.header-subtitle {
+  font-size: 1.5rem; /* text-2xl (24px) */
+  font-weight: 300; /* font-light */
+  margin-bottom: 3rem; /* mb-12 (3rem = 48px) */
+  font-style: italic; /* italic */
+}
+
+@media (min-width: 768px) {
+  .header-subtitle {
+    font-size: 1.875rem; /* md:text-3xl (30px) */
+  }
+}
+
+/* Corresponds to:
+  className="bg-indigo-600 hover:bg-indigo-700 text-white text-xl font-semibold py-4 px-10 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+*/
+.book-button {
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: #fff; /* text-white */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  padding: 1rem 2.5rem; /* py-4 px-10 */
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: all 300ms ease; /* transition duration-300 */
+  text-decoration: none; /* Removes default link underline */
+}
+
+.book-button:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+/* Keyframes for the fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
